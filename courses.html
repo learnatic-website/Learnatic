@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[website name] courses</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .navbar{
+            width:90%;
+            height: 60px;
+            background-color: #86bbea;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.505);
+            position: relative;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .navbar a:hover{
+            color: rgb(84, 133, 211);
+        }
+
+        .navbar a.active{
+            color: rgb(84, 133, 211);
+        }
+
+        .search-box{
+            margin-left:130px;
+            width: 230px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            padding-left: 14px;
+            padding-right: 14px;
+            background-color: #f9f9f9;
+        }
+
+        .search-box input{
+            border: none;
+            outline: none;
+            width: 100%;
+            background: none;
+        }
+
+        .name{
+            margin-left: 250px;
+            font-size: 20px;
+            color: rgb(7, 28, 58);
+        }
+
+        #courses{
+            margin-top: 100px;
+            margin-bottom: 70px;
+        }
+
+        .title{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 60px;   
+            position: relative;
+        }
+
+        .title::after{
+            content: "";
+            display: block;
+            width: 120px;
+            height: 4px;
+            background-color: #257af1;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        .grid{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .course{
+            background-color: #e5f1f9;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .course img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .button2{
+            background-color: #ffbf34;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button2:hover{
+            background-color: #ad7005;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="courses.html" class="active">Courses</a>
+    <a href="review.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="name">
+        <h3>LEARNATIC</h3>
+    </div>
+</nav>
+
+<div id="courses">
+    <h1 class="title">Our Online Courses</h1>
+
+    <div class="grid">
+        <div class="course">
+            <img src="uiux.jpg">
+            <h3>UI/UX Designing</h3>
+            <button class="button2">Learn More</button>
+        </div>
+
+        <div class="course">
+            <img src="full stack.jpg">
+            <h3>Full Stack Development</h3>
+            <button class="button2">Learn More</button>
+        </div>
+
+        <div class="course">
+            <img src="markting.jpg">
+            <h3>Digital Marketing</h3>
+            <button class="button2">Learn More</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[website name] home</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+         .navbar{
+            width:90%;
+            height: 60px;
+            background-color: #86bbea;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.505);
+            position: relative;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .navbar a:hover{
+            color: rgb(84, 133, 211);
+        }
+         .navbar a.active{
+            color: rgb(84, 133, 211);
+         }
+        .search-box{
+            margin-left:130px;
+            width: 230px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+           padding-left: 14px;
+           padding-right: 14px;
+            background-color: #f9f9f9;;
+        }
+        .search-box input{
+            border: none;
+            outline: none;
+            width: 100%;
+            background: none;
+        }
+        .name{
+             margin-left: 250px;
+            font-size: 20px;
+            color: rgb(7, 28, 58);
+        }
+          
+         #home{
+            margin-bottom: 70px;
+        }
+
+
+        #d2{
+            background-color: #e5f1f9;
+            height: 620px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .text1{
+          font-size: 60px;
+            font-family: Cambria, Georgia, serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-left: 80px;
+        }
+
+        .text2{
+            font-size: 20px;
+            color: rgb(52, 52, 62);
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-left: 80px;
+        }
+        .button1{
+           background-color: #257af1;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            width: 280px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-left: 80px;
+        }
+
+         .button1:hover{
+            background-color: #1395ff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .img1{
+            width: 480px;
+        }
+        .title{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+     </style>
+</head>
+<body>
+<nav class="navbar">
+    <a href="home.html" class="active">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="review.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="name">
+        <h3>LEARNATIC</h3>
+    </div>
+</nav>
+<div id="home">
+    <div id="d2">
+        <div>
+            <h1 class="text1">
+                Unlock Your<br>
+                Potential With<br>
+                Online Training
+            </h1>
+            <p class="text2">
+                 Upgrade your skills and achieve your goals with<br>
+                expert instructors and flexible learning options.
+            </p>
+        
+              <a href="courses.html" class="button1"> Explore Our Courses</a>
+        </div>
+
+        <img src="logo.png" class="img1">
+    </div>
+</div>
+</body>
+</html>
